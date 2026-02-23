@@ -1,0 +1,7 @@
+parameter string /* from the living */;
+storage (pair timestamp string)/* remains */;
+code { CAR/*ries only the word */;
+  NOW /* is not mine */;
+   PAIR/*ed with time */;
+    NIL operation /* changes nothing */;
+     PAIR }/* or not */
