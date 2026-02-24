@@ -1,0 +1,127 @@
+ara@zero still-alive % octez-client originate contract still_alive \
+  transferring 0 from mainnet_account \
+  running <(tr '\n' ' ' < contract/still_alive.tz) \
+  --init 'Pair 0 ""' \
+  --burn-cap 0.5 --force
+Waiting for the node to be bootstrapped...
+Current head: BLLUJm19MTJg (timestamp: 2026-02-23T20:31:04.000-00:00, validation: 2026-02-23T20:31:09.203-00:00)
+Node is bootstrapped.
+Estimated gas: 583.106 units (will add 100 for safety)
+Estimated storage: 310 bytes added (will add 20 for safety)
+Operation successfully injected in the node.
+Operation hash is 'opX7982yJ382Gzv8UN8ARJ9zz6rksDhgN7Ve7kMEnLJThf4T9V8'
+Waiting for the operation to be included...
+Operation found in block: BL86zTSm5HzsjRUFbNxdr8yAgbyvmbKEuQytkrW44XJhDCLuJmE (pass: 3, offset: 1)
+This sequence of operations was run:
+  Manager signed operations:
+    From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+    Fee to the baker: ꜩ0.000352
+    Expected counter: 15853338
+    Gas limit: 684
+    Storage limit: 330 bytes
+    Balance updates:
+      tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.000352
+      payload fees(the block proposer) ....... +ꜩ0.000352
+    Origination:
+      From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+      Credit: ꜩ0
+      Script:
+        { parameter string ;
+          storage (pair timestamp string) ;
+          code { CAR ; NOW ; PAIR ; NIL operation ; PAIR } }
+        Initial storage: (Pair 0 "")
+        No delegate for this contract
+        This origination was successfully applied
+        Originated contracts:
+          KT1DTdeD27wygvkjBCqEi1K5gVLKYXeE3VRh
+        Storage size: 53 bytes
+        Paid storage size diff: 53 bytes
+        Consumed gas: 583.072
+        Balance updates:
+          tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.01325
+          storage fees ........................... +ꜩ0.01325
+          tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.06425
+          storage fees ........................... +ꜩ0.06425
+
+New contract KT1DTdeD27wygvkjBCqEi1K5gVLKYXeE3VRh originated.
+The operation has only been included 0 blocks ago.
+We recommend to wait more.
+Use command
+  octez-client wait for opX7982yJ382Gzv8UN8ARJ9zz6rksDhgN7Ve7kMEnLJThf4T9V8 to be included --confirmations 1 --branch BMZXzAQp6uuCZujs6sSMK4JAPCQ9amvZzrymuYoRqou3C3y2EnH
+and/or an external block explorer.
+Contract memorized as still_alive.
+ara@zero still-alive % octez-client transfer 0 from mainnet_account to still_alive \
+  --arg '"still alive"' \
+  --burn-cap 0.1
+Node is bootstrapped.
+Estimated gas: 1284.218 units (will add 100 for safety)
+Estimated storage: 15 bytes added (will add 20 for safety)
+Operation successfully injected in the node.
+Operation hash is 'ooEKe3XF4qb34nbB2SPgq2vBLfpahuB2isoqxxEfHSBZ2iExtoS'
+Waiting for the operation to be included...
+Operation found in block: BLstEBgSASAjyyeTGZgKmC34FbCu9W3k6YK4DqJrpCrdyi4LBXm (pass: 3, offset: 1)
+This sequence of operations was run:
+  Manager signed operations:
+    From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+    Fee to the baker: ꜩ0.000411
+    Expected counter: 15853339
+    Gas limit: 1385
+    Storage limit: 35 bytes
+    Balance updates:
+      tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.000411
+      payload fees(the block proposer) ....... +ꜩ0.000411
+    Transaction:
+      Amount: ꜩ0
+      From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+      To: KT1DTdeD27wygvkjBCqEi1K5gVLKYXeE3VRh
+      Parameter: "still alive"
+      This transaction was successfully applied
+      Updated storage: (Pair 1771879327 "still alive")
+      Storage size: 68 bytes
+      Paid storage size diff: 15 bytes
+      Consumed gas: 1284.152
+      Balance updates:
+        tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.00375
+        storage fees ........................... +ꜩ0.00375
+
+The operation has only been included 0 blocks ago.
+We recommend to wait more.
+Use command
+  octez-client wait for ooEKe3XF4qb34nbB2SPgq2vBLfpahuB2isoqxxEfHSBZ2iExtoS to be included --confirmations 1 --branch BLMKYvjsBwkQqBuSmLu3VAT6yyVRkam4uoDL8zt8cysxWwZeSwq
+and/or an external block explorer.
+ara@zero still-alive % octez-client transfer 0 from mainnet_account to still_alive \
+  --arg '"still alive"' \
+  --burn-cap 0.1
+Node is bootstrapped.
+Estimated gas: 375.946 units (will add 100 for safety)
+Estimated storage: no bytes added
+Operation successfully injected in the node.
+Operation hash is 'ooz1rXPR1RXmpFvrTrVQs1uqrPtutxAztX7Dw3HitSjazC2xoKE'
+Waiting for the operation to be included...
+Operation found in block: BKuPqp9L1r181VMMrnFWwYV3iPKYbEkobgz1EXRFtBi1FjbXWQe (pass: 3, offset: 0)
+This sequence of operations was run:
+  Manager signed operations:
+    From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+    Fee to the baker: ꜩ0.00032
+    Expected counter: 15853340
+    Gas limit: 476
+    Storage limit: 0 bytes
+    Balance updates:
+      tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX ... -ꜩ0.00032
+      payload fees(the block proposer) ....... +ꜩ0.00032
+    Transaction:
+      Amount: ꜩ0
+      From: tz1YeK4YvnKfkGo63rnjGBCSiugvX1SnPApX
+      To: KT1DTdeD27wygvkjBCqEi1K5gVLKYXeE3VRh
+      Parameter: "still alive"
+      This transaction was successfully applied
+      Updated storage: (Pair 1771891345 "still alive")
+      Storage size: 68 bytes
+      Consumed gas: 375.880
+
+The operation has only been included 0 blocks ago.
+We recommend to wait more.
+Use command
+  octez-client wait for ooz1rXPR1RXmpFvrTrVQs1uqrPtutxAztX7Dw3HitSjazC2xoKE to be included --confirmations 1 --branch BLf3suKKj1Dh3h3iWtGCzSTU3Q52A1YxyZnexUZkFEk8wygb2hV
+and/or an external block explorer.
+ara@zero still-alive % 
