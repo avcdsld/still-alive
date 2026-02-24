@@ -35,7 +35,7 @@ octez-client transfer 0 from local_account to still_alive \
 octez-client --endpoint https://mainnet.api.tez.ie config update
 octez-client import secret key mainnet_account unencrypted:edsk...
 octez-client originate contract still_alive \
-  transferring 0 from my_wallet \
+  transferring 0 from mainnet_account \
   running <(tr '\n' ' ' < contract/still_alive.tz) \
   --init 'Pair 0 ""' \
   --burn-cap 0.5
