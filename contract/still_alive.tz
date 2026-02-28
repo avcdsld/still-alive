@@ -1,6 +1,6 @@
 parameter string /* from the living */;
 storage (pair timestamp string)/* remains */;
-code { CAR/*ries only the word */;
+code { CAR/*ved into the word */;
   NOW /* is not mine */;
    PAIR/*ed with time */;
     NIL operation /* changes nothing */;
